@@ -1,0 +1,7 @@
+package com.myweb.www.controller;
+
+public class MemeberController {
+
+	private final MemberVO mvo;
+	
+}

@@ -1,0 +1,8 @@
+package com.myweb.www.security;
+
+public class AuthVO {
+	email varchar(100) not null,
+	auth varchar(50) not null);
+	private String email;
+	private String auth;
+}

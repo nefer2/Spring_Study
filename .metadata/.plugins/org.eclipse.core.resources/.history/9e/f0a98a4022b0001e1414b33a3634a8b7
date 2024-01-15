@@ -1,0 +1,11 @@
+onsole.log("boardComment js in");
+console.log(bnoVal);
+
+document.getElementById('cmtPostBtn').addEventListener('click', () => {
+  const cmtText = document.getElementById('cmtText');
+  if (cmtText.value == null || cmtText.value == '') {
+    alert('댓글을 입력해주세요.');
+    cmtText.focus();
+    return false;
+  }
+});

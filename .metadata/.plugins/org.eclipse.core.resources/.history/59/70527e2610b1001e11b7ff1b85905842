@@ -1,0 +1,26 @@
+package com.myweb.www.service;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.myweb.www.repository.MemberDAO;
+import com.myweb.www.security.MemberVO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+@RequiredArgsConstructor
+public class MemberServiceImpl implements MemberService{
+
+	private final MemberDAO mdao;
+	
+	BCryptPasswordEncoder passwordEncoder;
+	
+	@Override
+	public int signup(MemberVO mvo) {
+		
+		return mdao.signup(mvo);
+	}
+}
